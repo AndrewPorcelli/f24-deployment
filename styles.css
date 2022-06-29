@@ -3,10 +3,11 @@ body {
 }
 
 #welcome-div {
-  align-content: center;
   width: 1200px;
   height: 150px;
-  left: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #ad {
