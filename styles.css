@@ -1,0 +1,13 @@
+body {
+  display: flex;
+}
+
+#welcome-div {
+  width: 1200px;
+  height: 150px;
+}
+
+#ad {
+  font-weight: 200;
+  align-content: center;
+}
