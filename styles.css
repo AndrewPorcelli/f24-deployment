@@ -1,9 +1,8 @@
 #welcome-div {
-  width: 1200px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
 
 #ad {
