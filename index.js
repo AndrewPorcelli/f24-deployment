@@ -1,7 +1,7 @@
-const bigButton = document.querySelector('#meanOldDroid')
+// const bigButton = document.querySelector('#meanOldDroid')
 
-const message = () => {
-    alert('General Kenobi!')
-}
+// const message = () => {
+//     alert('General Kenobi!')
+// }
 
-bigButton.addEventListener('click', message)
+// bigButton.addEventListener('click', message)
