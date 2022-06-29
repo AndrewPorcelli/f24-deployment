@@ -8,8 +8,13 @@
 #ad {
   font-weight: 200;
   align-content: center;
+  color: white;
 }
 
 img {
   margin: auto;
+}
+
+body {
+    background-color: rgb(33, 31, 31);
 }
