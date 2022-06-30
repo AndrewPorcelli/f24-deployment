@@ -14,7 +14,7 @@ var rollbar = new Rollbar({
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!');
 
-app.get('/endpoint', (req, res) => {
+app.get('api/endpoint', (req, res) => {
   rollbar.error('this is an error');
   res.status(200).send('ok');
 });
