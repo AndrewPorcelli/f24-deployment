@@ -15,11 +15,7 @@ var rollbar = new Rollbar({
 rollbar.log('Hello world!');
 
 app.get('/endpoint', (req, res) => {
-  try {
-    nonExistentFunction();
-  } catch (error) {
-    rollbar.error(error);
-  }
+  rollbar.error('this is an error');
   res.status(200).send('ok');
 });
 
