@@ -14,6 +14,14 @@ var rollbar = new Rollbar({
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!');
 
+app.get('/endpoint', (req, res) => {
+  try {
+    nonExistentFunction();
+  } catch (error) {
+    rollbar.error(error);
+  }
+});
+
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../index.html'));
 });
