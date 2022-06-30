@@ -17,8 +17,8 @@ rollbar.log('Hello world!');
 app.get('/endpoint', (req, res) => {
   try {
     nonExistentFunction();
-  } catch (error) {
-    rollbar.info('error here');
+  } catch {
+    rollbar.error('error here');
   }
   res.status(200).send('ok');
 });
