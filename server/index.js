@@ -20,6 +20,7 @@ app.get('/endpoint', (req, res) => {
   } catch (error) {
     rollbar.error(error);
   }
+  res.status(200).send('ok');
 });
 
 app.get('/', (req, res) => {
